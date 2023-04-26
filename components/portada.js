@@ -17,8 +17,8 @@ export default function portada() {
             Estudiante de Ingeniería Informática con especial interés por el desarrollador frontend y como segunda dedicación la fotografía. <br/>
             Encontrarás información sobre mi y algunos trabajos y servicios que realizo como fotógrafo.
           </p>
-          </div>
-          <div>
+        </div>
+        <div className={styles.botones}>
           <Link href={"/fotografia"}><button className={styles.button1}>Fotógrafo</button></Link>
           <Link href={"/#contacto"}><button className={styles.button2}>Contactar</button></Link>
         </div>

@@ -23,7 +23,7 @@ export default function Footer() {
                 </nav>
 
                 <Link href={'/'}>
-                        <Image className={styles.logo} src="/img/logo-foto.svg" width={80} height={40} alt='imagen logotipo' />
+                        <Image className={styles.logo} src="/img/logo2.png" width={80} height={40} alt='imagen logotipo' />
                 </Link>
             </div>
             </header>

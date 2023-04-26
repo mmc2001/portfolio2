@@ -6,7 +6,7 @@
 }
 
 .c1 h2 {
-  padding-bottom: 30px;
+  /* padding-bottom: 10px; */
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
@@ -14,7 +14,7 @@
   line-height: 61px;
   color: #FFFFFF;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 60px;
   
 }
 
@@ -46,7 +46,7 @@
 }
 
 .card h3 {
-  padding-top: 60px;
+  padding-top: 30px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
@@ -57,7 +57,7 @@
 }
 
 .card h4 {
-  padding-top: 10px;
+  padding-top: 5px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;

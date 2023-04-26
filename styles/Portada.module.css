@@ -1,7 +1,8 @@
+
 .inicio {
     background: #fff url(/img/fondo.svg) center center/cover no-repeat;
     width: 100%;
-    height: 1025px;
+    height: 100vh;
     display: flex;
     align-items: center;
     /* margin-top: -5%; */
@@ -9,6 +10,7 @@
   
 .texto {
     padding-left: 80px;
+    margin-top: -400px; /* Por qué se sube tanto sin esto???*/
 }
 
 .texto h1 {
@@ -62,6 +64,12 @@
     color: #FFFFFF;
 }
 
+.botones {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
 .button1 {
     box-sizing: border-box;
     background-color: #79158A;
@@ -97,4 +105,5 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 26px;
+    
 }

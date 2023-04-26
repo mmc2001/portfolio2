@@ -13,7 +13,7 @@ export default function Header() {
         <header className={styles.header}>
             <div className={`contenedor ${styles.barra}`}>
                 <Link href={'/'}>
-                        <Image className={styles.logo} src="/img/logo-foto.svg" width={80} height={40} alt='imagen logotipo' />
+                        <Image className={styles.logo} src="/img/logo2.png" width={100} height={40} alt='imagen logotipo' />
                 </Link>
 
                 <nav className={styles.navegacion} >
@@ -25,7 +25,7 @@ export default function Header() {
                                         
                     <Link className={ router.pathname === '/fotografia' ? styles.active : ''} href="/fotografia">Fotógrafo</Link>
                 </nav>
-            </div>+
+            </div>
         </header>
     </div>
   )
