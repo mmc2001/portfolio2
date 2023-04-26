@@ -13,7 +13,7 @@ export default function Header() {
         <header className={styles.header}>
             <div className={`contenedor ${styles.barra}`}>
                 <Link href={'/'}>
-                        <Image className={styles.logo} src="/img/logo2.png" width={100} height={40} alt='imagen logotipo' />
+                        <Image className={styles.logo} src="/img/logo2.png" width={150} height={40} alt='imagen logotipo' />
                 </Link>
 
                 <nav className={styles.navegacion} >

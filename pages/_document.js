@@ -5,7 +5,7 @@ export default function Document() {
     <Html>
         <Head>
           <meta name="description" content="Frontend Portfolio" />
-          <link rel="icon" sizez="32x32" href="/img/logo-foto.ico" />
+          <link rel="icon" sizez="32x32" href="/img/logo1.png" />
         </Head>
         <body>
             <Main />
