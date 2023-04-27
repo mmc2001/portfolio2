@@ -8,13 +8,10 @@ export default function portada() {
       <div className={styles.inicio}>
         <div className={styles.texto}>
           <h1>Bienvenido a mi Portfolio</h1>
-          <h2>Hola, soy Moisés</h2>
-          <br/>
-          <span>Desarrollador</span>
-          <span>Fotógrafo</span>
+          <h2>Hola, soy Moisés <span>Desarrollador - Fotógrafo</span></h2>
 
           <p>
-            Estudiante de Ingeniería Informática con especial interés por el desarrollador frontend y como segunda dedicación la fotografía. <br/>
+            Estudiante de Ingeniería Informática con especial interés <br/> por el desarrollador frontend y como segunda dedicación la fotografía. <br/>
             Encontrarás información sobre mi y algunos trabajos y servicios que realizo como fotógrafo.
           </p>
         </div>

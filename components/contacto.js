@@ -7,34 +7,35 @@ export default function contacto() {
     <div className={styles.c2}>
       <div className={styles.container}>
         <div className={styles.columna1}>
-            <h2>Contacto</h2>
-            <div className={styles.container}>
-                <div className={styles.columna3}> 
-                    <h3>Nombre</h3>
-                    <input className={styles.box1} type="text" name="Nombre" placeholder="Nombre" size="30" required></input>
+            <h2 id="contacto">Contacto</h2>
+            <form className={styles.formulario}>
+                <div className={styles.campos}>
+                    <label >Nombre</label>
+                    <label className={styles.t1}>Apellidos</label>
                 </div>
-                <div className={styles.columna4}>
-                    <h3>Apellidos</h3>
-                    <input type="text" name="Apellidos" placeholder="Apellidos" size="30" required></input>
+                <div className={styles.campos}>
+                    <input className={styles.box1} type="text" name="nombre" placeholder="Nombre" size="30" /* value={nombre} */ required></input>
+                    <input type="text" name="apellidos" placeholder="Apellidos" size="30" /* value={apellidos} */ required></input>
                 </div>
-            </div>
-            <div className={styles.container}>
-                <div className={styles.columna5}>
-                    <h3>Correo Electrónico</h3>
-                    <input type="text" name="Email" placeholder="Email" size="30" required></input>
-                </div>
-                <div className={styles.columna6}>
-                    <h3>Asunto</h3>
-                    <input type="text" name="Asunto" placeholder="Asunto" size="30" required></input>
-                </div>
-            </div>
-            <div>
-                <h3>Mensaje</h3>
-                <textarea name="Mensaje" placeholder="Mensaje" cols="60" rows="10" minlength="10" maxlength="1000" required></textarea>
-            </div>
 
-            <input className={styles.submit} type="submit" name="Enviar" value="Enviar"></input>
+                <div className={styles.campos}>
+                    <label>Correo Electrónico</label>
+                    <label className={styles.t2}>Asunto</label>
+                </div>
+                <div className={styles.campos}>
+                    <input type="text" name="email" placeholder="Email" size="30" /* value={email} */ required></input>
+                    <input type="text" name="asunto" placeholder="Asunto" size="30" /* value={asunto} */ required></input>
+                </div>
 
+                <div className={styles.campos}>
+                    <label>Mensaje</label>
+                </div>
+                <div className={styles.campos}>
+                    <textarea name="mensaje" placeholder="Mensaje" cols="60" rows="10" minlength="10" maxlength="1000" /* value={mensaje} */ required></textarea>
+                </div>
+
+                <input className={styles.submit} type="submit" name="enviar" /* value={enviar} */></input>
+            </form>    
         </div>
 
         <div className={styles.columna2}>

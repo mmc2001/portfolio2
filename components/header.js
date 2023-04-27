@@ -21,7 +21,7 @@ export default function Header() {
 
                     <Link className={ router.pathname === '/sobre-mi' ? styles.active : ''} href="#sobre-mi">Sobre mi</Link>
 
-                    <Link className={ router.pathname === '/#contacto' ? styles.active : ''} href="#contacto">Contacto</Link>
+                    <Link className={ router.pathname === '/contacto' ? styles.active : ''} href="#contacto">Contacto</Link>
                                         
                     <Link className={ router.pathname === '/fotografia' ? styles.active : ''} href="/fotografia">Fotógrafo</Link>
                 </nav>

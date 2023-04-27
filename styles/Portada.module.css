@@ -12,12 +12,11 @@
     padding-left: 80px;
     margin-top: -400px; /* Por qué se sube tanto sin esto???*/
 }
-
 .texto h1 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 105px;
     line-height: 48px;
 
     color: #FFFFFF;
@@ -27,8 +26,8 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 105px;
+    line-height: 200px;
 
     color: #FFFFFF;
 }
@@ -37,11 +36,11 @@
     display: block;
     color: #FD62D6;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 90px;
     font-family: 'Inter';
     white-space: nowrap;
     border-right: 4px solid;
-    width: 12ch;
+    width: 21ch;
 
     animation: typing 2s steps(12),
         blink .5s infinite step-end alternate;
@@ -58,52 +57,49 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 55px;
+    line-height: 85px;
 
     color: #FFFFFF;
 }
 
 .botones {
     display: flex;
-    justify-content: center;
-    margin-top: 40px;
+    align-items: left;
+    justify-content: left;
+    margin-top: 10px;
+    font-size: 66px;
+    
 }
 
-.button1 {
+.botones .button1 {
     box-sizing: border-box;
     background-color: #79158A;
     border: 3px solid #79158A;
     border-radius: 10px;
     color: #FFFFFF;
-    padding: 10px 27px;
+    padding: 20px 40px;
     text-align: center;
     display: inline-block;
-    font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 26px;
-    line-height: 26px;
 }
 
-.button2 {
+.botones .button2 {
     box-sizing: border-box;
     border: 3px solid #79158A;
     border-radius: 10px;
     color: #79158A;
-    padding: 12px 29px;
+    padding: 20px 40px;
     text-align: center;
     display: inline-block;
-    font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 26px;
-    
+
 }
