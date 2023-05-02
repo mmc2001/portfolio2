@@ -16,15 +16,28 @@ export default function Header() {
                         <Image className={styles.logo} src="/img/logo2.png" width={150} height={40} alt='imagen logotipo' />
                 </Link>
 
-                <nav className={styles.navegacion} >
-                    <Link className={ router.pathname === '/' ? styles.active : ''} href="/">Inicio</Link>
+                {router.pathname != '/fotografia' ? (
 
-                    <Link className={ router.pathname === '/sobre-mi' ? styles.active : ''} href="#sobre-mi">Sobre mi</Link>
+                  <nav className={styles.navegacion} >
+                      <Link className={ router.pathname === '/' ? styles.active : ''} href="/">Inicio</Link>
 
-                    <Link className={ router.pathname === '/contacto' ? styles.active : ''} href="#contacto">Contacto</Link>
-                                        
-                    <Link className={ router.pathname === '/fotografia' ? styles.active : ''} href="/fotografia">Fotógrafo</Link>
-                </nav>
+                      <Link className={ router.pathname === '/sobre-mi' ? styles.active : ''} href="#sobre-mi">Sobre mi</Link>
+
+                      <Link className={ router.pathname === '/contacto' ? styles.active : ''} href="#contacto">Contacto</Link>
+                                          
+                      <Link className={ router.pathname === '/fotografia' ? styles.active : ''} href="/fotografia">Fotógrafo</Link>
+                  </nav>
+                 ) : (
+                  <nav className={styles.navegacion} >
+                      <Link className={ router.pathname === '/fotografia' ? styles.active : ''} href="/fotografia">Inicio</Link>
+
+                      <Link className={ router.pathname === '/servicios' ? styles.active : ''} href="#servicios">Servicios</Link>
+
+                      <Link className={ router.pathname === '/contacto' ? styles.active : ''} href="#contacto">Contacto</Link>
+                                          
+                      <Link className={ router.pathname === '/' ? styles.active : ''} href="/">Sobre mi</Link>
+                  </nav>
+                )}
             </div>
         </header>
     </div>

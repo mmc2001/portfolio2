@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from "../styles/SobreMi.module.css"
 import Image from 'next/image'
+import styles from "../../styles/SobreMi.module.css"
 
 export default function sobreMi() {
   return (

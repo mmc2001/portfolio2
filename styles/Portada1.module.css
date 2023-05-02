@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     /* margin-top: -5%; */
+    flex-wrap: wrap;
   }
   
 .texto {
@@ -38,6 +39,10 @@
     font-weight: 500;
     font-size: 90px;
     font-family: 'Inter';
+}
+
+.texto span:before {
+
     white-space: nowrap;
     border-right: 4px solid;
     width: 21ch;
@@ -46,6 +51,7 @@
         blink .5s infinite step-end alternate;
         overflow: hidden;
 }
+
 @keyframes typing {
     from { width: 0 }
 }

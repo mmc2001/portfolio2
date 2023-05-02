@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
-import styles from "../styles/Portada.module.css"
+/* import AnimatedText from "./AnimatedText" */
+import styles from "../../styles/Portada1.module.css"
 
 export default function portada() {
   return (
@@ -8,8 +9,8 @@ export default function portada() {
       <div className={styles.inicio}>
         <div className={styles.texto}>
           <h1>Bienvenido a mi Portfolio</h1>
-          <h2>Hola, soy Moisés <span>Desarrollador - Fotógrafo</span></h2>
-
+          <h2>Hola, soy <span>Desarrollador - Fotógrafo</span> </h2>
+          {/* <AnimatedText texts={['Desarrollador', 'Fotógrafo']} /> */}
           <p>
             Estudiante de Ingeniería Informática con especial interés <br/> por el desarrollador frontend y como segunda dedicación la fotografía. <br/>
             Encontrarás información sobre mi y algunos trabajos y servicios que realizo como fotógrafo.

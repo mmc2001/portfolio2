@@ -1,7 +1,7 @@
 import Layout from '../components/layout'
-import Portada from '@/components/portada'
-import SobreMi from '@/components/sobreMi'
-import Contacto from '@/components/contacto'
+import Portada from '@/components/P-Personal/portada'
+import SobreMi from '@/components/P-Personal/sobreMi'
+import Contacto from '@/components/P-Personal/contacto'
 
 export default function Home() {
 
