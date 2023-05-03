@@ -7,17 +7,12 @@ export default function portada() {
     <>
       <div className={styles.inicio}>
         <div className={styles.texto}>
-          <h1>Bienvenido a mi Portfolio</h1>
-          <h2>Hola, soy <span>Desarrollador - Fotógrafo</span> </h2>
-          {/* <AnimatedText texts={['Desarrollador', 'Fotógrafo']} /> */}
-          <p>
-            Estudiante de Ingeniería Informática con especial interés <br/> por el desarrollador frontend y como segunda dedicación la fotografía. <br/>
-            Encontrarás información sobre mi y algunos trabajos y servicios que realizo como fotógrafo.
-          </p>
+          <h1>Bienvenido a mi</h1>
+          <span>Portfolio</span>
         </div>
         <div className={styles.botones}>
-          <Link href={"/fotografia"}><button className={styles.button1}>Fotógrafo</button></Link>
-          <Link href={"/#contacto"}><button className={styles.button2}>Contactar</button></Link>
+          <Link href={"/#contacto2"}><button className={styles.button1}>Contactar</button></Link>
+          <Link href={"/#servicios"}><button className={styles.button2}>Servicios</button></Link>
         </div>
       </div>
     </>
