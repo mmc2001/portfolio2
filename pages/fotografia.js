@@ -2,6 +2,8 @@ import React from 'react'
 import Layout from '@/components/layout'
 import Portada from '@/components/P-Fotografia/portada'
 import SobreMi from '@/components/P-Fotografia/sobreMi'
+import TrabajosEjemplo from '@/components/P-Fotografia/trabajosEjemplo'
+import Servicios from '@/components/P-Fotografia/servicios'
 
 
 export default function fotografia() {
@@ -13,9 +15,10 @@ export default function fotografia() {
         >  
 
           <Portada />
-          
           <SobreMi />
-          <h1 className="text-indigo-600 text-6xl font-bold uppercase">Holaaaaa</h1>
+          <TrabajosEjemplo/>
+          <Servicios />
+
         </Layout>
     </>
   )

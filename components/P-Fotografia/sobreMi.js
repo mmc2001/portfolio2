@@ -5,44 +5,35 @@ import Link from 'next/link'
 export default function sobreMi() {
   return (
     <>
-      {/* <h1>Los mejores momentos de la vida son aquellos <span className='text-center font-bold'>que deberían quedar inmortalizados para el recuerdo</span></h1>
-      <div classname="grid grid-cols-2 gap-4">
-        <div>
-            <Image src="/img/foto-perfil.png" width={572} height={382} alt='imagen principal'/>
-        </div>
-        <div>
-            <p>
-                Lorem ipsum dolor sit amet. Et eaque Quis aut voluptas culpa ut velit earum in 
-                consequatur suscipit quo deleniti quos et unde explicabo sed laboriosam repudiandae. 
-                Est accusantium repudiandae et consequatur eligendi est autem libero.
-            </p>
-        </div>
-        <Link href={"/#contacto2"}><button >Contactar</button></Link>
-      </div> */}
 
-        <div className="py-16 bg-gradient-to-br from-green-50 to-cyan-100">  
-        <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
-            <div className="mb-12 space-y-2 text-center">
-                <span className="block w-max mx-auto px-3 py-1.5 border border-green-200 rounded-full bg-green-100 text-green-600">Blog</span>
-                <h2 className="text-2xl text-cyan-900 font-bold md:text-4xl">Sharing is Caring</h2>
-                <p className="lg:w-6/12 lg:mx-auto">Quam hic dolore cumque voluptate rerum beatae et quae, tempore sunt, debitis dolorum officia aliquid explicabo? Excepturi, voluptate?</p>
-            </div>
+        <h1 className="pt-40 pr-10 md:px-20 sm:px-14 lg:flex justify-center text-6xl ">Los mejores momentos de la vida son aquellos</h1>
+        <span className='py-8 pl-80 lg:flex justify-center text-6xl font-bold'> que deberían quedar inmortalizados para el recuerdo</span>
 
-            <div className="grid gap-12 lg:grid-cols-2">
-                <div className="p-1 rounded-xl group sm:flex space-x-6 bg-white bg-opacity-50 shadow-xl hover:rounded-2xl">
-                <img src="https://tailus.io/sources/blocks/twocards/preview/images/woman.jpg" alt="art cover" loading="lazy" width="1000" height="667" className="h-56 sm:h-full w-full sm:w-5/12 object-cover object-top rounded-lg transition duration-500 group-hover:rounded-xl"/>
-                <div className="sm:w-7/12 pl-0 p-5">
-                    <div className="space-y-2">
-                    <div className="space-y-4">
-                        <h4 className="text-2xl font-semibold text-cyan-900">Provident de illo eveniet commodi fuga fugiat laboriosam expedita.</h4>
-                        <p className="text-gray-600">Laborum saepe laudantium in, voluptates ex placeat quo harum aliquam totam, doloribus eum impedit atque! Temporibus...</p>
-                    </div>
-                    <a href="www.tailus.io" className="block w-max text-cyan-600">Read more</a>
+        <div className="flex items-center p-10 w-full h-full bg-white">
+            <div className="border-t pt-10 grid grid-cols-2 gap-8">
+                <div className="flex flex-col justify-start">
+                    <div className="flex flex-col w-full object-cover h-4/6 justify-items-start rounded-lg overflow-hidden">
+                        <img className="w-full h-full object-cover" src='https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80' alt='nike shoes' />
                     </div>
                 </div>
+                <div className="flex flex-col">
+                    <div className="flex flex-col gap-4">
+                        <h1 className="capitalize text-6xl font-extrabold">Nuestro Trabajo</h1>
+                        <h2 className="text-3xl">¿Qué hacemos?</h2>
+                        <p className="xl:text-4xl text-gray-500	">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatibus voluptatum nisi maxime obcaecati impedit? Ratione error eum qui quidem? Veniam
+                            accusamus ea repudiandae itaque, explicabo quidem perspiciatis. Culpa, asperiores deserunt.
+                        </p>
+                        <p className="xl:text-4xl text-gray-500	">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatibus voluptatum nisi maxime obcaecati impedit? Ratione error eum qui quidem? Veniam
+                            accusamus ea repudiandae itaque, explicabo quidem perspiciatis. Culpa, asperiores deserunt.
+                        </p>
+                        <Link className="bg-azul mt-10 px-5 py-3 text-gray-700 rounded-lg w-1/5 text-center" href={"/#contacto2"}><button >Contactar</button></Link>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     </>
   )
