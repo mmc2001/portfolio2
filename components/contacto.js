@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 /* import sendMail from '../components/sendMail' */
 import Image from 'next/image'
-import styles from '../../styles/Contacto.module.css'
+import styles from '../styles/Contacto.module.css'
 
 export default function contacto() {
 
@@ -24,14 +24,14 @@ export default function contacto() {
         return;
     }
     setError(false)
-
-    const datosCliente = {
-        nombre,
-        apellidos,
-        email,
-        asunto,
-        mensaje
-    }
+    console.log("holaaa")
+    // const datosCliente = {
+    //     nombre,
+    //     apellidos,
+    //     email,
+    //     asunto,
+    //     mensaje
+    // }
 
     /* await sendMail(datosCliente) */
 

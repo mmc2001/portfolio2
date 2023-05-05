@@ -1,22 +1,19 @@
 import Layout from '../components/layout'
-import Portada from '@/components/P-Personal/portada'
-import SobreMi from '@/components/P-Personal/sobreMi'
-import Contacto from '@/components/P-Personal/contacto'
+
+import Head from "next/head"
+import Header from "../components/header"
+import Footer from "../components/footer"
 
 export default function Home() {
-
   return (
     <>
-        <Layout 
-          title={'Inicio'}
-          description={'Portfolio, desarrollador frontend y fotógrafo'}
-        >  
-
-          <Portada />
-          <SobreMi />
-          <Contacto />
-          
-        </Layout>
+      <Head>
+        <title>{`Portolio - ${'title'}`}</title>
+        <meta name="description" content={'description'} />
+      </Head>
+      <Header />
+      <Layout/>
+      <Footer/>
     </>
   )
 }

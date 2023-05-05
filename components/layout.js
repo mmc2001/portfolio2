@@ -1,18 +1,14 @@
-import Head from "next/head"
-import Header from "./header"
-import Footer from "./footer"
+import Portada from '@/components/portada'
+import SobreMi from '@/components/sobreMi'
+import Contacto from '@/components/contacto'
 
-export default function Layout ({children, title='', description=''}){
+export default function Layout (){
   return (
-    <div>
-        <Head>
-            <title>{`Portolio - ${title}`}</title>
-            <meta name="description" content={description} />
-        </Head>
-        <Header />
-            {children}
-        <Footer/>
-    </div>
+    <>
+      <Portada />
+      <SobreMi />
+      <Contacto />
+    </>
   )
 }
 

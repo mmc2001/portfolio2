@@ -1,17 +1,21 @@
 .inicio {
     background: #fff url(/img/fondo.svg) center center/cover no-repeat;
-    width: 100%;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    /* margin-top: -5%; */
-    flex-wrap: wrap;
+    padding-top: 700px;
+    width: 100%;
   }
   
-.texto {
-    padding-left: 80px;
-    margin-top: -400px; /* Por qué se sube tanto sin esto???*/
+
+.container {
+   display: grid;
+   gap: 650px;
+   padding: 80px; 
 }
+
+
+/* .texto {
+    
+} */
 .texto h1 {
     font-family: 'Inter';
     font-style: normal;
@@ -33,8 +37,7 @@
 }
 
 .texto span {
-    display: block;
-    color: #87D6E9;
+    color: #FD62D6;
     font-weight: 500;
     font-size: 90px;
     font-family: 'Inter';
@@ -69,18 +72,18 @@
 }
 
 .botones {
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    margin-top: 10px;
+    display: grid;
     font-size: 66px;
+    gap: 80px;
+    grid-auto-flow: column;
+    width: fit-content;
     
 }
 
 .botones .button1 {
     box-sizing: border-box;
-    background-color: transparent;
-    border: 3px solid #87D6E9;
+    background-color: #79158A;
+    border: 3px solid #79158A;
     border-radius: 10px;
     color: #FFFFFF;
     padding: 20px 40px;
@@ -95,10 +98,9 @@
 
 .botones .button2 {
     box-sizing: border-box;
-    background-color: #87D6E9;
-    border: 3px solid #87D6E9;
+    border: 3px solid #79158A;
     border-radius: 10px;
-    color: #333333;
+    color: #79158A;
     padding: 20px 40px;
     text-align: center;
     display: inline-block;

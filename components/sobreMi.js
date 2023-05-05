@@ -1,18 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
-import styles from "../../styles/SobreMi.module.css"
+import styles from "../styles/SobreMi.module.css"
 
 export default function sobreMi() {
   return (
-    <>
       <div className={styles.c1}>
         <h2 id='sobre-mi'>Sobre <span>Mi</span></h2>
         <div className={styles.card}>
-            <div className={styles.container}>
-            <div className={styles.columna1}>
-                <Image className={styles.foto} src="/img/foto-perfil.png" width={614} height={711} alt='imagen logotipo' />
-            </div>
-            <div className={styles.columna2}>
+            <Image className={styles.foto} src="/img/foto-perfil.png" width={614} height={711} alt='imagen logotipo' />
+            <div className={styles.info}>
                 <h3>Moisés Moyano Cejudo</h3>
                 <h4>Desarrollador <span>y</span> Fotógrafo</h4>
                 <p>
@@ -45,15 +41,11 @@ export default function sobreMi() {
                       <li>Trello</li>
                       </ul>
                   </div>
-                  <div>
-                      <Image src="/img/astronauta2.svg" width={262} height={168} alt='imagen logotipo'/>
-                  </div>
+                  <Image src="/img/astronauta2.svg" width={262} height={168} alt='imagen logotipo'/>
                 </div>
-
             </div>
             </div>
-        </div>
       </div>
-    </>
   )
 }
+
