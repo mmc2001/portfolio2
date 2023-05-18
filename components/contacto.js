@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-/* import sendMail from '../components/sendMail' */
+// import sendMail from '../pages/api/correo'
 import Image from 'next/image'
 import styles from '../styles/Contacto.module.css'
 
@@ -24,16 +24,18 @@ export default function contacto() {
         return;
     }
     setError(false)
-    console.log("holaaa")
-    // const datosCliente = {
-    //     nombre,
-    //     apellidos,
-    //     email,
-    //     asunto,
-    //     mensaje
-    // }
+    console.log("Se ejecuta la función")
+    const datosCliente = {
+         nombre,
+         apellidos,
+         email,
+         asunto,
+         mensaje
+    }
 
-    /* await sendMail(datosCliente) */
+    console.log(`Nombre:  ${nombre}`)
+
+    await sendMail(datosCliente)
 
     //Reinicir el form
     setNombre('')
@@ -42,92 +44,91 @@ export default function contacto() {
     setAsunto('')
     setMensaje('')
     
-}
+  }
 
   return (
-    <div className={styles.c2}>
-      <div className={styles.container}>
-        <div className={styles.columna1}>
-            <h2 id="contacto">Contacto</h2>
-            <form 
-                method="post" 
-                action="../pages/api/correo"
-                onSubmit={handleSubmit}
-                className={styles.formulario}>
+    <div className={styles.contenedor} id="contacto">
+        <h2>Contacto</h2>
+        <div className={styles.contenido}>
+            <form className={styles.formulario}>
+                <div>
+                    <div className={styles.filas}> 
+                        <h3 className={styles.separacion2}>Nombre</h3>
+                        <h3>Apellidos</h3>
+                    </div>
 
-                {error && <Error mensaje='Todos los campos son obligatorios'/>}
+                    <div className={styles.filas}> 
+                        <input type="text" 
+                        name="nombre" 
+                        placeholder="Nombre" 
+                        size="30" 
+                        value={nombre} 
+                        onChange= {(e) => setNombre(e.target.value)}
+                        required
+                        className={styles.campo1}>
+                        </input>
+                        <input type="text" 
+                        name="apellidos" 
+                        placeholder="Apellidos" 
+                        size="30" 
+                        value={apellidos} 
+                        onChange= {(e) => setApellidos(e.target.value)}
+                        required
+                        className={styles.campo2}>
+                        </input>
+                    </div>
 
-                <div className={styles.campos}>
-                    <label >Nombre</label>
-                    <label className={styles.t1}>Apellidos</label>
-                </div>
-                <div className={styles.campos}>
-                    <input className={styles.box1} 
-                            type="text" 
-                            name="nombre" 
-                            placeholder="Nombre" 
-                            size="30" 
-                            value={nombre}  
-                            onChange= {(e) => setNombre(e.target.value)}
-                            required>
-                    </input>
-                    <input type="text" 
-                            name="apellidos" 
-                            placeholder="Apellidos" 
-                            size="30" 
-                            value={apellidos} 
-                            onChange= {(e) => setApellidos(e.target.value)}
-                            required>
-                    </input>
-                </div>
+                    <div className={styles.filas}> 
+                        <h3 className={styles.separacion1}>Correo Electrónico</h3>
+                        <h3>Asunto</h3>
+                    </div>
 
-                <div className={styles.campos}>
-                    <label>Correo Electrónico</label>
-                    <label className={styles.t2}>Asunto</label>
-                </div>
-                <div className={styles.campos}>
-                    <input type="text" 
-                            name="email" 
-                            placeholder="Email" 
-                            size="30" 
-                            value={email} 
-                            onChange= {(e) => setEmail(e.target.value)}
-                            required>
-                    </input>
-                    <input type="text" 
-                            name="asunto" 
-                            placeholder="Asunto" 
-                            size="30" 
-                            value={asunto} 
-                            onChange= {(e) => setAsunto(e.target.value)}
-                            required>
-                    </input>
-                </div>
+                    <div className={styles.filas}> 
+                        <input type="text" 
+                        name="email" 
+                        placeholder="Email" 
+                        size="30" 
+                        value={email} 
+                        onChange= {(e) => setEmail(e.target.value)}
+                        required
+                        className={styles.campo2}>
+                        </input>
+                        <input type="text" 
+                        name="asunto" 
+                        placeholder="Asunto" 
+                        size="30" 
+                        value={asunto} 
+                        onChange= {(e) => setAsunto(e.target.value)}
+                        required
+                        className={styles.campo1}>
+                        </input>
+                    </div>
 
-                <div className={styles.campos}>
-                    <label>Mensaje</label>
-                </div>
-                <div className={styles.campos}>
-                    <textarea name="mensaje" 
+                    <div className={styles.filas}> 
+                        <h3>Mensaje</h3>
+                    </div>
+
+                    <div className={styles.filas}> 
+                        <textarea name="mensaje" 
                             placeholder="Mensaje" 
-                            cols="60" 
+                            cols="80" 
                             rows="10" 
                             minLength="10" 
                             maxLength="1000" 
                             value={mensaje} 
                             onChange= {(e) => setMensaje(e.target.value)}
                             required>
-                    </textarea>
+                        </textarea>
+                    </div>
                 </div>
-
-                <input className={styles.submit} type="submit" name="enviar" /* value={enviar} */></input>
-            </form>    
+                <div className={styles.boton}>
+                    <input className={styles.submit} type="submit" name="enviar" onClick={handleSubmit}></input>
+                </div>
+            </form>  
+            <div className={styles.imagen}>
+                <Image src="/img/astronauta3.svg" width={351.07} height={679.75} alt='imagen astronauta3'/>
+            </div>
         </div>
-
-        <div className={styles.columna2}>
-            <Image className={styles.imagen} src="/img/astronauta3.svg" width={351.07} height={679.75} alt='imagen astronauta3'/>
-        </div>
-      </div>
     </div>
   )
 }

@@ -1,9 +1,4 @@
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
 :root {
   --primary: #79158A;
   --black: #262626;
@@ -15,14 +10,19 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+ *, *:before, *:after {
+   box-sizing: inherit;
+ }
 
 body {
   font-size: 2rem;
   font-family: var(--fuente-principal);
   line-height: 1.5;
+  max-width: 2560px;
+  // max-height: 2160px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
 img {
   max-width: 100%;
@@ -39,8 +39,4 @@ main {
   font-weight: 900;
   color: var(--primary);
   margin: 5rem 0;
-}
-
-.titulo{
-  margin-bottom: 1em;
 }

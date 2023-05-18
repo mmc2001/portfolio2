@@ -1,21 +1,21 @@
 import nodemailer from "nodemailer";
 
-export default async function handler(req, res) {
-  const { nombre, apellidos, email, asunto, mensaje } = req.body;
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  port: 465,
+  secure: true,
+  auth: {
+    user: "moisesmoyanoc@gmail.com",
+    pass: "karwbfoynqpiteid",
+  },
+});
 
-  const transporter = nodemailer.createTransport({
-    service: "smtp.gmail.com",
-    port: 465,
-    secure: true,
-    auth: {
-      user: "moisesmoyanoc@gmail.com",
-      pass: "generar una",
-    },
-  });
+transporter.verify().then(() => {
+  console.log("Listo para mandar emails")
+})
 
-  transporter.verify().then(() => {
-    console.log("Listo para mandar emails")
-  })
+export default async function sendEmail(datos) {
+  const { nombre, apellidos, email, asunto, mensaje } = datos;
 
   const mailOptions = {
     from: email,

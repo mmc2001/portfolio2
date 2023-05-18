@@ -13,17 +13,15 @@ export default function Header() {
         <header className={styles.header}>
             <div className={`contenedor ${styles.barra}`}>
                 <Link href={'/'}>
-                        <Image className={styles.logo} src="/img/logo2.png" width={150} height={40} alt='imagen logotipo' />
+                        <Image className={styles.logo} src="/img/logo2.svg" width={150} height={30} alt='imagen logotipo' />
                 </Link>
 
-                <nav className={styles.navegacion1} >
+                <nav className={styles.navegacion} >
                     <Link className={ router.pathname === '/' ? styles.active : ''} href="/">Inicio</Link>
 
                     <Link className={ router.pathname === '/sobre-mi' ? styles.active : ''} href="#sobre-mi">Sobre mi</Link>
 
                     <Link className={ router.pathname === '/contacto' ? styles.active : ''} href="#contacto">Contacto</Link>
-                                        
-                    <Link className={ router.pathname === '/fotografia' ? styles.active : ''} href="/fotografia">Fotógrafo</Link>
                 </nav>
             </div>
         </header>

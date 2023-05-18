@@ -1,6 +1,5 @@
 .header {
-    background: rgba(35, 35, 35, 0.6);
-    border: 1px solid rgba(3, 3, 3, 0.1);
+    background: rgba(35, 35, 35, 0.8);
     position: fixed;
     width: 100%;
     top: 0;
@@ -20,6 +19,7 @@
 
 .header .barra {
     margin: auto;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     /* flex-direction: column; */
@@ -32,53 +32,33 @@
     }
 }
 
-.navegacion1 {
+.navegacion {
     margin-top: 5rem;
     display: flex;
+    align-items: center;
     gap: 5rem;
 }
 @media (min-width: 768px) {
-    .navegacion1 {
+    .navegacion {
         margin: 0;
     }
 }
-.navegacion1 a {
+.navegacion a {
     color: var(--white);
     text-decoration: none;
     font-size: 2.7rem;
     font-weight: 700;
     text-transform: uppercase;
-    padding: .5rem;
+    /* padding: .5rem; */
+    padding: 6px;
     transition-property: background-color;
     transition-duration: 300ms;
 }
-.navegacion1 a:hover,
-.active {
-    background-color: #87D6E9;
+.navegacion a:hover {
+    color: #c9c9c9;
 }
 
-
-.navegacion2 {
-    margin-top: 5rem;
-    display: flex;
-    gap: 5rem;
-}
-@media (min-width: 768px) {
-    .navegacion2 {
-        margin: 0;
-    }
-}
-.navegacion2 a {
-    color: var(--white);
-    text-decoration: none;
-    font-size: 2.7rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: .5rem;
-    transition-property: background-color;
-    transition-duration: 300ms;
-}
-.navegacion2 a:hover,
-.active {
-    background-color: #87D6E9;
+.navegacion .active {
+    border: 4px solid #79158A;
+    border-radius: 4px;
 }

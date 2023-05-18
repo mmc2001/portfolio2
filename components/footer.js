@@ -1,4 +1,4 @@
-import React, { use } from 'react'
+import React from 'react'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -22,7 +22,7 @@ export default function Footer() {
                   <Link href="/fotografia">Fotógrafo</Link>
               </nav>
               <Link href={'/'}>
-                      <Image className={styles.logo} src="/img/logo2.png" width={100} height={40} alt='imagen logotipo' />
+                      <Image className={styles.logo} src="/img/logo2.svg" width={100} height={40} alt='imagen logotipo' />
               </Link>
             </div>
             </header>
