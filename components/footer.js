@@ -18,8 +18,6 @@ export default function Footer() {
                   <Link href="#sobre-mi">Sobre mi</Link>
 
                   <Link href="#contacto">Contacto</Link>
-                                      
-                  <Link href="/fotografia">Fotógrafo</Link>
               </nav>
               <Link href={'/'}>
                       <Image className={styles.logo} src="/img/logo2.svg" width={100} height={40} alt='imagen logotipo' />

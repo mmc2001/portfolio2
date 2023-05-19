@@ -7,8 +7,15 @@
     grid-auto-flow: column;
 }
 
+.imagen {
+    object-fit: cover;
+    width: auto;
+    height: 500px;
+}
+
 .container {
    display: grid;
+   margin-top: 180px;
    gap: 60px;
    padding: 80px; 
 }
@@ -19,6 +26,7 @@
     font-weight: 700;
     font-size: 70px;
     line-height: 38px;
+    margin-bottom: 40px;
 
     color: #FFFFFF;
 }
@@ -29,12 +37,13 @@
     font-weight: 500;
     font-size: 60px;
     line-height: 50px;
+    margin-bottom: 20px;
 
     color: #FFFFFF;
 }
 
 .texto span {
-    color: #FD62D6;
+    color: #79158A;
     font-weight: 500;
     font-size: 60px;
     font-family: 'Inter';
@@ -114,10 +123,7 @@
 
 }
 
-.imagen {
-    display: flex;
-    justify-content: center;
-}
+
 
 @media only screen and (max-width: 1920px) {
     .inicio {
@@ -186,36 +192,54 @@
 
     .inicio {
         height: 100vh;
-        padding-top: 250px;
+        padding-top: 80px;
         width: 100%;
+        display: grid;
+        grid-auto-flow: row;
     }
-
+    .imagen {
+        display: flex;
+        justify-content: right;
+        width: auto;
+        height: 300px;
+    }
     .container {
-        padding: 50px; 
-     }
+        margin-top: -80px;
+        gap: 60px;
+        padding: 80px; 
+    }
 
      .texto h1 {
         font-weight: 700;
         font-size: 40px;
         line-height: 38px;
     }
-    
     .texto h2 {
         font-weight: 500;
         font-size: 30px;
         line-height: 20px;
     }
-    
     .texto span {
         font-weight: 500;
         font-size: 30px;
     }
-
     .texto p {
         width: 600px;
         font-weight: 500;
         font-size: 25px;
         /* line-height: 85px; */
+    }
+
+    .botones {
+        gap: 40px;
+    }
+    .botones .button1 {
+        font-size: 25px;
+        padding: 15px 25px;
+    }
+    .botones .button2 {
+        font-size: 25px;
+        padding: 15px 25px;
     }
 
 }

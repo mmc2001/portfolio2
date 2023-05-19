@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/timeline.module.css'
+import styles from '../styles/Timeline.module.css'
 
 export default function timeline() {
   return (

@@ -8,10 +8,14 @@ export default function portada() {
   return (
     <>
       <div className={styles.inicio}>
+        <div>
+          <Image className={styles.imagen} src="/img/astronauta.png" width={1000} height={1000} alt='imagen astronauta'/>
+        </div>
         <div className={styles.container}>
           <div className={styles.texto}>
             <h1>Bienvenido a mi Portfolio</h1>
-            <h2>Hola, soy <span class="text-type"></span> </h2>
+            <h2>Hola, soy <span ></span></h2>
+            {/* <h2>Hola, soy <span class="text-type"></span> </h2> */}
             {/* < script  src =" https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js " > </ script >
             < script  src =" ./animacion.js " > </ script > */}
             {/* <AnimatedText texts={['Desarrollador', 'Fotógrafo']} /> */}
@@ -25,9 +29,6 @@ export default function portada() {
             <Link href={"#contacto"}><button className={styles.button2}>Contactar</button></Link>
           </div>
         </div> 
-        <div className={styles.imagen}>
-          <Image src="/img/astronauta.svg" width={1000} height={700} alt='imagen astronauta'/>
-        </div>
       </div>
     </>
   )
