@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState } from 'react'
-// import sendMail from '../pages/api/correo'
 import Image from 'next/image'
 import styles from '../styles/Contacto.module.css'
 
@@ -23,8 +22,9 @@ export default function contacto() {
         setError(true)
         return;
     }
+
     setError(false)
-    console.log("Se ejecuta la función")
+    /* console.log("Se ejecuta la función")
     const datosCliente = {
          nombre,
          apellidos,
@@ -33,9 +33,9 @@ export default function contacto() {
          mensaje
     }
 
-    console.log(`Nombre:  ${nombre}`)
+    console.log(`Nombre:  ${datosCliente.nombre}`)
 
-    await sendMail(datosCliente)
+    await sendEmail(datosCliente) */
 
     //Reinicir el form
     setNombre('')
@@ -50,7 +50,10 @@ export default function contacto() {
     <div className={styles.contenedor} id="contacto">
         <h2>Contacto</h2>
         <div className={styles.contenido}>
-            <form className={styles.formulario}>
+            <form 
+                action="https://formsubmit.co/7ee4f70532c1d92a17289fe4132502ad" 
+                method="POST"
+                className={styles.formulario}>
                 <div>
                     <div className={styles.filas}> 
                         <h3 className={styles.separacion2}>Nombre</h3>
@@ -84,7 +87,7 @@ export default function contacto() {
                     </div>
 
                     <div className={styles.filas}> 
-                        <input type="text" 
+                        <input type="email" 
                         name="email" 
                         placeholder="Email" 
                         size="30" 
@@ -109,7 +112,8 @@ export default function contacto() {
                     </div>
 
                     <div className={styles.filas}> 
-                        <textarea name="mensaje" 
+                        <textarea type="text" 
+                            name="mensaje" 
                             placeholder="Mensaje" 
                             cols="80" 
                             rows="10" 
@@ -122,8 +126,12 @@ export default function contacto() {
                     </div>
                 </div>
                 <div className={styles.boton}>
-                    <input className={styles.submit} type="submit" name="enviar" onClick={handleSubmit}></input>
+                    <input className={styles.submit} type="submit" name="enviar" onSubmit={handleSubmit}></input>
                 </div>
+                <input type="hidden" name="_next" value="http://localhost:3000"/>
+                <input type="hidden" name="_captcha" value="false"></input>
+                <input type="hidden" name="_template" value="box"></input>
+
             </form>  
             <div className={styles.imagen}>
                 <Image src="/img/astronauta3.svg" width={351.07} height={679.75} alt='imagen astronauta3'/>

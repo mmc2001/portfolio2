@@ -26,7 +26,7 @@ export default function portada() {
           </div>
         </div> 
         <div className={styles.imagen}>
-          <Image src="/img/astronauta.svg" width={2000} height={700} alt='imagen astronauta'/>
+          <Image src="/img/astronauta.svg" width={1000} height={700} alt='imagen astronauta'/>
         </div>
       </div>
     </>
