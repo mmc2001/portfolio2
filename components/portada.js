@@ -9,12 +9,12 @@ export default function portada() {
     <>
       <div className={styles.inicio}>
         <div>
-          <Image className={styles.imagen} src="/img/astronauta.png" width={1000} height={1000} alt='imagen astronauta'/>
+          <Image className={styles.imagen1} src="/img/astronauta.png" width={1000} height={1000} alt='imagen astronauta'/>
         </div>
         <div className={styles.container}>
           <div className={styles.texto}>
             <h1>Bienvenido a mi Portfolio</h1>
-            <h2>Hola, soy <span ></span></h2>
+            <h2>Hola, soy <span>Desarrollador - Fotógrafo</span></h2>
             {/* <h2>Hola, soy <span class="text-type"></span> </h2> */}
             {/* < script  src =" https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js " > </ script >
             < script  src =" ./animacion.js " > </ script > */}
@@ -29,6 +29,9 @@ export default function portada() {
             <Link href={"#contacto"}><button className={styles.button2}>Contactar</button></Link>
           </div>
         </div> 
+        <div>
+          <Image className={styles.imagen2} src="/img/astronauta.png" width={1000} height={1000} alt='imagen astronauta'/>
+        </div>
       </div>
     </>
   )

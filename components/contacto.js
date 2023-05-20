@@ -56,8 +56,8 @@ export default function contacto() {
                 className={styles.formulario}>
                 <div>
                     <div className={styles.filas}> 
-                        <h3 className={styles.separacion2}>Nombre</h3>
-                        <h3>Apellidos</h3>
+                        <h3>Nombre</h3>
+                        <h3 className={styles.separacion1}>Apellidos</h3>
                     </div>
 
                     <div className={styles.filas}> 
@@ -68,6 +68,7 @@ export default function contacto() {
                         value={nombre} 
                         onChange= {(e) => setNombre(e.target.value)}
                         required
+                        style={{ width: '400px' }}
                         className={styles.campo1}>
                         </input>
                         <input type="text" 
@@ -82,8 +83,8 @@ export default function contacto() {
                     </div>
 
                     <div className={styles.filas}> 
-                        <h3 className={styles.separacion1}>Correo Electrónico</h3>
-                        <h3>Asunto</h3>
+                        <h3>Correo Electrónico</h3>
+                        <h3 className={styles.separacion2}>Asunto</h3>
                     </div>
 
                     <div className={styles.filas}> 
@@ -103,6 +104,7 @@ export default function contacto() {
                         value={asunto} 
                         onChange= {(e) => setAsunto(e.target.value)}
                         required
+                        style={{ width: '400px' }}
                         className={styles.campo1}>
                         </input>
                     </div>

@@ -2,7 +2,7 @@
     width: 100%;
     height: 796px;
     display: flex;
-    align-items: center;
+    justify-content: center;
     flex-direction: column;
     background: #fff url(/img/formulario.svg) center center/cover no-repeat;
 }
@@ -14,7 +14,6 @@
     font-size: 80px;
     line-height: 61px;
     color: #FFFFFF;
-    padding-top: 40px;
     text-align: center;
     margin-top: 30px;
     
@@ -24,13 +23,14 @@
     display: grid;
     align-items: center;
     grid-auto-flow: column;
-    gap: 240px;
+    gap: 180px;
 }
 
 .formulario {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 300px;
 }
 
 .filas {
@@ -53,11 +53,11 @@
 }
 
 .separacion1 {
-    margin-right: 112px;
+    margin-left: 142px;
 }
 
 .separacion2 {
-    margin-right: 168px;
+    margin-left: 200px;
 }
 
 .filas input::placeholder{
@@ -80,7 +80,7 @@
     border-radius: 5px;
     text-indent: 10px;
 
-    width: 304px;
+    width: 100%;
     height: 54px;
 }
 
@@ -89,8 +89,8 @@
     border: 1px solid #79158A;
     border-radius: 5px;
     text-indent: 10px;
-
-    width: 435px;
+    
+    width: 100%;
     height: 54px;
 }
 
@@ -130,4 +130,30 @@
     .contenedor{
         width: 100%;
     }
+    .contenedor h2 {
+        font-size: 60px;
+    }
+    .formulario{
+        margin-top: 40px;
+        margin-left: 160px;
+    }
+    .filas h3 {
+        font-size: 30px;
+        margin-top: 0px;
+    }
+    .submit{
+        font-size: 22px;
+        width: 145px;
+        height: 48px;
+    }
+    .imagen{
+        opacity: 0;
+    }
+    .separacion1 {
+    margin-left: 140px;
+    }
+    .separacion2 {
+        margin-left: 30px;
+    }
+
 }
